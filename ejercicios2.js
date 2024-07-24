@@ -1,11 +1,35 @@
 //  Hacer un programa que solicite el ingreso de un número y que luego emita un
 // cartel por pantalla aclarando si el mismo es múltiplo de 5.
 
+function Multiplo(n) {
+  n % 5 === 0
+    ? console.log("Es multiplo de 5")
+    : console.log("No es multiplo de 5");
+}
+
+Multiplo(20);
+
 // Hacer un programa que solicite el ingreso de dos números y luego calcular:
 // a. La resta si el primero es mayor que el segundo.
 // b. La suma si son iguales.
 // c. El producto si el primero es menor.
 // Se deberá emitir un cartel por pantalla con el resultado correspondiente.
+
+function Calculin(n1, n2) {
+  let result = 0;
+  if (n1 > n2) {
+    result = n1 - n2;
+    console.log(`Resta ${result}`);
+  } else if (n1 === n2) {
+    result = n1 + n2;
+    console.log(`Suma ${result}`);
+  } else if (n1 < n2) {
+    result = n1 * n2;
+    console.log(`Multiplicacion ${result}`);
+  }
+}
+
+Calculin(33, 33);
 
 // Hacer un programa para ingresar dos números. Si el segundo es distinto de
 // cero, calcular la división del primero por el segundo y mostrar el resultado por
